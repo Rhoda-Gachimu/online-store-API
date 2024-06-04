@@ -6,7 +6,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def say_hello(request):
-    return HttpResponse('Hello World!')
+    return render(request, 'description.html')
 
 
 # map this request to a URL so that when i get a request to this URL,this function will be called
